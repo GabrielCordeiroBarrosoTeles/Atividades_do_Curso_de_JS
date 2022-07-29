@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>4) Faça um programa que calcule o mostre a média aritmética de N notas.</h1>
+    Quantas notas vc que adcionar? <input type="text" id="qtd_notas">
+    <br><button onclick="calcular()">Calcular</button>
+    <p id="imprimir"></p>
+    <script>
+        function calcular(){
+            var qtd_notas = Number(document.getElementById('qtd_notas').value)
+            var nota = 0
+            var v=1
+            do{
+                n=Number(prompt("Informa a nota:")) 
+                nota = nota+n 
+                v++
+            }while(v<=qtd_notas)
+            document.getElementById('imprimir').innerHTML=`Sua média é ${nota/qtd_notas}`
+        }
+    </script>
+</body>
+</html>

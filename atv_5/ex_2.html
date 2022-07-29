@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2) A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o n−ésimo termo.</h1>
+    Quer ate qual termo? <input type="text" id="qtd_termo">
+    <br><button onclick="calcular()">Calcular</button>
+    <script>
+        function calcular(){
+            var qtd_termo = Number(document.getElementById('qtd_termo').value) 
+            var ultimo = 1
+            var penultimo = 1
+            var count = 1
+            document.write(`${ultimo}`)
+            document.write(`,${penultimo}`)
+            do{
+                termo = ultimo + penultimo
+                penultimo = ultimo
+                ultimo = termo
+                count ++
+                document.write(`,${termo}`)
+            }while(count<=(qtd_termo-2))
+        }
+    </script>
+</body>
+</html>

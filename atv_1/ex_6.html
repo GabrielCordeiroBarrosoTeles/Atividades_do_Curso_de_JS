@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <h1>6) Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês.</h1>
+    <label>Quanto você ganha por hora: </label><input type="text" id="salario_por_hora">
+    <br><br><label>Quantas horas trabalhadas: </label><input type="text" id="horas_trabalhadas">
+    <br><br><p id="resultado"></p>
+    <br><br><button onclick="calcular()">Clique em mim</button>
+    <script>
+        function calcular(){
+            var v1 = Number(document.getElementById('salario_por_hora').value)
+            var v2 = Number(document.getElementById('horas_trabalhadas').value)
+            document.getElementById('resultado').innerHTML= `Você ganha R$${v1} por hora <br> E você trabalhou por : ${v2} horas <br> Você vai ter no final do mês:  ${v1*v2} reais`
+        }
+    </script>
+</body>
+</html>

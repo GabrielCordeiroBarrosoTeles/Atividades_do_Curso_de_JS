@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <h1>2) Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo</h1>
+    <label for="n">Informe um número: </label><input type="text" id="n">
+    <button onclick="verificar()">Verificar</button>
+    <p id="imprimir"></p>
+    <script>
+        function verificar(){
+            var n = Number(document.getElementById('n').value)
+            if(n>0){
+                document.getElementById('imprimir').innerHTML=`O número informado ${n} é positivo`
+            }else if(n<0){
+                document.getElementById('imprimir').innerHTML=`O número informado ${n} é negativo`
+            }else if(n==0){
+                document.getElementById('imprimir').innerHTML=`O número informado ${n} é neutro`
+            }
+        }
+    </script>
+</body>
+</html>

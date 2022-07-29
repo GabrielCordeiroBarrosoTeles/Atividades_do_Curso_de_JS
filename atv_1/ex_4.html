@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>4) Faça um Programa que peça as 4 notas bimestrais e mostre a média.</h1>
+    <input type="text" id="n1" placeholder="Informe sua primeira nota">
+    <br><br><input type="text" id="n2" placeholder="Informe sua segunda nota">
+    <br><br><input type="text" id="n3" placeholder="Informe sua terceira nota">
+    <br><br><input type="text" id="n4" placeholder="Informe sua quarta nota">
+    <br><br><p id="resultado"></p>
+    <br><br><button onclick="calcular()">Clique em mim</button>
+    <script>
+        function calcular(){
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+            var n3 = Number(document.getElementById('n3').value)
+            var n4 = Number(document.getElementById('n4').value)
+            document.getElementById('resultado').innerHTML= `Notas informadas ${n1} , ${n2} , ${n3} , ${n4} <br> Sua média é  ${(n1+n2+n3+n4)/4}`
+        }
+    </script>
+</body>
+</html>

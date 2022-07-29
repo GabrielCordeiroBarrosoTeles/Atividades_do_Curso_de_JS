@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>7) Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+        Tabuada de 5:
+        5 X 1 = 5
+        5 X 2 = 10
+        ...
+        5 X 10 = 50</h1>
+        Informe o numero que vc quer a tabuada: <input type="text" id="n">
+        <br><br><button onclick="tabuada()">Gerar</button>
+        <script>
+            function tabuada(){
+                var n = Number(document.getElementById('n').value)
+                for(var v = 1;v<=10;v++){
+                    document.write(`<br>${n} X ${v} = ${n*v}`)
+                }
+                
+            }
+        </script>
+</body>
+</html>

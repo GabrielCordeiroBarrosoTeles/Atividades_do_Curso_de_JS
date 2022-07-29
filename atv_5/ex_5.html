@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>5) Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120. A saída deve ser conforme o exemplo abaixo:
+        Fatorial de: 5
+            5! =  5 . 4 . 3 . 2 . 1 = 120</h1>
+            Fatorial de: <input type="text" id="n">
+            <br><br><button onclick="calcular()">Calcular</button>
+            <script>
+                function calcular(){
+                    var n = Number(document.getElementById('n').value) 
+                    var resultado = 1
+                    cont = 1
+                    var v = n
+                    document.write(`Fatorial de: ${n}<br>!${n}= `)
+                    do{
+                    resultado = resultado*cont
+                    document.write(`${v}.`)
+                    cont++
+                    v--
+                    }while(cont<=n)
+                    document.write(`= ${resultado}`)
+                }
+            </script>
+
+</body>
+</html>

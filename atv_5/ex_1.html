@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1) Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a quantidade de números impares.</h1>
+    Informe o número 1: <input type="text" id="n1">
+    <br><br>Informe o número 2: <input type="text" id="n2">
+    <br><br>Informe o número 3: <input type="text" id="n3">
+    <br><br>Informe o número 4: <input type="text" id="n4">
+    <br><br>Informe o número 5: <input type="text" id="n5">
+    <br><br>Informe o número 6: <input type="text" id="n6">
+    <br><br>Informe o número 7: <input type="text" id="n7">
+    <br><br>Informe o número 8: <input type="text" id="n8">
+    <br><br>Informe o número 9: <input type="text" id="n9">
+    <br><br>Informe o número 10: <input type="text" id="n10">
+    <br><br><button onclick="verifica()">Verificar</button>
+    <script>
+        function verifica(){
+            var par = 0
+            var impar = 0
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+            var n3 = Number(document.getElementById('n3').value)
+            var n4 = Number(document.getElementById('n4').value)
+            var n5 = Number(document.getElementById('n5').value)
+            var n6 = Number(document.getElementById('n6').value)
+            var n7 = Number(document.getElementById('n7').value)
+            var n8 = Number(document.getElementById('n8').value)
+            var n9 = Number(document.getElementById('n9').value)
+            var n10 = Number(document.getElementById('n10').value)
+            if(n1%2==0){
+                par++
+            }else if(n1%2!=0){
+                impar++
+            
+            }if(n2%2==0){
+                par++
+            }else if(n2%2!=0){
+                impar++
+            
+            }if(n3%2==0){
+                par++
+            }else if(n3%2!=0){
+                impar++
+            
+            }if(n4%2==0){
+                par++
+            }else if(n4%2!=0){
+                impar++
+            
+            }if(n5%2==0){
+                par++
+            }else if(n5%2!=0){
+                impar++
+            
+            }if(n6%2==0){
+                par++
+            }else if(n6%2!=0){
+                impar++
+            
+            }if(n7%2==0){
+                par++
+            }else if(n7%2!=0){
+                impar++
+            
+            }if(n8%2==0){
+                par++
+            }else if(n8%2!=0){
+                impar++
+            
+            }if(n9%2==0){
+                par++
+            }else if(n9%2!=0){
+                impar++
+            
+            }if(n10%2==0){
+                par++
+            }else if(n10%2!=0){
+                impar++
+            }
+            document.write(`Teve ${par} pares <br>E ${impar} impares`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 1</title>
+</head>
+<body onload="iniciar()">
+    
+    <script>
+        function iniciar(){
+            document.write("2) Faça um programa que imprima na tela os números de 1 a 30 e do lado apresente a soma dos números existentes.<br><br>")
+            var soma = 0
+            for(var n=1;n<=30;n++){
+                soma = soma+n
+                document.write(`${n} -> ${soma}<br>`)
+            }
+        }
+    </script>
+</body>
+</html>

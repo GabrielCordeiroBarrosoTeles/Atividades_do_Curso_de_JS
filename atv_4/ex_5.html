@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>5) Faça um programa que leia 5 números e informe a soma e a média dos números.</h1>
+    Informe o 1° número: <input type="text" id="n1"><!--Ele pegou o valor do id n1-->
+    <br><br>Informe o 2° número: <input type="text" id="n2">
+    <br><br>Informe o 3° número: <input type="text" id="n3">
+    <br><br>Informe o 4° número: <input type="text" id="n4">
+    <br><br>Informe o 5° número: <input type="text" id="n5">
+    <br><br><button onclick="calcular()">Calcular</button>
+    <p id="imprimisao"></p>
+    <script>
+        function calcular(){
+            var n1 = Number(document.getElementById('n1').value)//e ele adcionou o na variarel n1
+            var n2 = Number(document.getElementById('n2').value)
+            var n3 = Number(document.getElementById('n3').value)
+            var n4 = Number(document.getElementById('n4').value)
+            var n5 = Number(document.getElementById('n5').value)
+            var soma = n1+n2+n3+n4+n5// somou 
+            var media = (n1+n2+n3+n4+n5)/5//fez a media
+            document.getElementById('imprimisao').innerHTML=`A soma dos números informado é ${soma}<br>A média é ${media}` 
+        }
+    </script>
+</body>
+</html>

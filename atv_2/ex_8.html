@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>8) Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+        <br>a) A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+        <br>b) A mensagem "Reprovado", se a média for menor do que sete;
+        <br>c) A mensagem "Aprovado com Distinção", se a média for igual a dez.
+    </h1>
+    <label for="nota1">Informa sua primeira nota: </label><input type="text" id="nota1">
+    <br><br><label for="nota2">Informa sua segunda nota: </label><input type="text" id="nota2">
+    <br><br><button onclick="calcular()">Calcular Média</button>
+    <p id="imprimir"></p>
+    <script>
+        function calcular(){
+            var nota_1 = Number(document.getElementById('nota1').value)
+            var nota_2 = Number(document.getElementById('nota2').value)
+            var media = (nota_1+nota_2)/2
+            if(media==10){
+                document.getElementById('imprimir').innerHTML=`Sua média é ${media}<br>Você foi aprovado com distinção`
+            }else if(media>=7){
+                document.getElementById('imprimir').innerHTML=`Sua média é ${media}<br>Você está aprovado`
+            }else if(media<7){
+                document.getElementById('imprimir').innerHTML=`Sua média é ${media}<br>Você está reprovado`
+            }
+        }
+    </script>
+</body>
+</html>

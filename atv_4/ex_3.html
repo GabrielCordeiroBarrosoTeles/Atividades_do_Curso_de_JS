@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>3) Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.</h1>
+    Inicil: <input type="text" id="inicil">
+    <br><br>Fim: <input type="text" id="fim">
+    <br><button onclick="gerar()">Gerar</button>
+    <script>
+        function gerar(){
+            var inicil = Number(document.getElementById('inicil').value)
+            var fim = Number(document.getElementById('fim').value)
+            document.write(`Os números que estão no intervalo de ${inicil} e ${fim} são:`)
+            if(inicil<fim){
+                for(inicil;inicil<=fim;inicil++){
+                    document.write(`${inicil},`)
+                }
+        
+            }else if(inicil>fim){
+                for(fim;fim<=inicil;fim++){
+                    document.write(`${fim},`)
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

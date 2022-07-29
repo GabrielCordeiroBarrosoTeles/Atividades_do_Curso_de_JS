@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1) Faça um Programa que peça um número inteiro e determine se ele é par ou impar. Dica: utilize o operador módulo (resto da divisão)</h1>
+    <label for="n">Digite um número inteiro: </label><input type="text" id="n">
+    <br><br><button onclick="verificar()">Verificar</button>
+    <p id="imprimir"></p>
+    <script>
+        function verificar(){
+            var numero = Number(document.getElementById('n').value)
+            if(numero%2==0){
+                document.getElementById('imprimir').innerHTML=`O número informado ${numero} é Par`
+            }else{
+                document.getElementById('imprimir').innerHTML=`O número informado ${numero} é Ímpar`
+            } 
+        }
+    </script>
+</body>
+</html>

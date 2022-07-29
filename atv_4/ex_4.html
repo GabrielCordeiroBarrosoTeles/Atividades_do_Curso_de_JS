@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>4) Faça um programa que leia 5 números e informe o maior número.</h1>
+    <script>
+        var num1 = prompt('Informe o primeiro número!')
+        var num2 = prompt('Informe o segundo número!')
+        var num3 = prompt('Informe o terceiro número!')
+        var num4 = prompt('Informe o quarto número!')
+        var num5 = prompt('Informe o quinto número!')
+        if ((num1 >num2) && (num1 > num3) && (num1 > num4) && (num1 >num5)){
+            document.write("o maior numero é o 1º-->", num1)
+        }
+	    if ((num2 >num1) && (num2 > num3) && (num2 > num4) && (num2  >num5)){
+          document.write("o maior numero é o 2º-->", num2)  
+        }if ((num3 >num2) &&( num3 > num1) && (num3 > num4) && (num3  >num5)){
+            document.write("o maior numero é o 3º-->", num3)
+        }else if ((num4 >num2) && (num4 > num3) && (num4 > num1) && (num4  >num5)){
+            document.write("o maior numero é o 4º-->", num4)	
+        }else{
+            document.write("o maior numero é o 5º-->", num5)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>3) Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.</h1>
+    <script>
+        var nota = Number(prompt("Informa uma nota de 0 pa dez:"))
+        var verifica=true
+        do{
+            if((nota>0)&&(nota<=10)){
+                document.write(`A nota informada é ${nota}`)
+                verifica = false
+            }else{
+                nota = Number(prompt("Vc digito errado.Eu só aceito notas de 0 á 10!!!"))
+            }
+        }while(verifica)
+    </script>
+</body>
+</html>

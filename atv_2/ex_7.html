@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>7) Faça um Programa que leia três números e mostre o maior e o menor deles.</h1>
+    <label for="n1">Informe o primeiro número: </label><input type="text" id="n1">
+    <br><br><label for="n2">Informe o segundo número: </label><input type="text" id="n2">
+    <br><br><label for="n3">Informe o terceiro número: </label><input type="text" id="n3">
+    <br><br><button onclick="verificar()">Verificar</button>
+    <br><br><p id="imprimir"></p>
+    <script>
+        function verificar(){
+            var n1 = Number(document.getElementById('n1').value)
+            var n2 = Number(document.getElementById('n2').value)
+            var n3 = Number(document.getElementById('n3').value)
+            var maior = n1
+            var menor = n1
+            if ((n2 > n1) && (n2 > n3)){
+             maior = n2   
+            }
+            if ((n3 > n1) && (n3 > n2)){
+             maior = n3
+             menor = n1   
+            }
+            if ((n2 < n3) && (n2 < n1)){
+                 menor = n2
+            }
+            
+            if ((n3 < n2) && (n3 < n1)){
+                menor = n3
+            }           
+ document.write(`O menor número digitado foi ${menor}`)
+ document.write(`<br>O maior número digitado foi ${maior}`)
+        }
+    </script>
+</body>
+</html>

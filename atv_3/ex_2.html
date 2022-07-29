@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>2) Faça um Programa que peça a hora e apresente uma mensagem de "Bom dia", "Boa tarde" ou "Boa noite" conforme a hora informada.</h1>
+    <label for="hora">Informa que horas são: </label><input type="text" id="hora">
+    <br><button onclick="verificar()">Verificar</button>
+    <p id="imprimir"></p>
+    <script>
+        function verificar(){
+            var hora = Number(document.getElementById('hora').value)
+            if(hora<12){
+                document.getElementById('imprimir').innerHTML='Bom Dia!'
+            }else if((hora>=12)&&(hora<18)){
+                document.getElementById('imprimir').innerHTML='Boa Tarde!'
+            }else if(hora>=18){
+                document.getElementById('imprimir').innerHTML='Boa Noite!'
+            }      
+        }
+    </script>
+</body>
+</html>

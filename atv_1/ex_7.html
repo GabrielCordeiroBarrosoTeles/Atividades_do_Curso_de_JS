@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <h1>Faça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).</h1>
+    <label>Informe o tamanho de um arquivo para download (em MB): </label><br><input type="text" id="tamanho">
+    <br><label>Informe a velocidade de um link de Internet (em Mbps): </label><br><input type="text" id="velocidade">
+    <br><br><p id="resultado"></p>
+    <br><br><button onclick="calcular()">Clique em mim</button>
+    <script>
+        function calcular(){
+            var n1 = Number(document.getElementById('tamanho').value)
+            var n2 = Number(document.getElementById('velocidade').value)
+            document.getElementById('resultado').innerHTML= `Tempo aproximado de download: ${(n1/n2)*60} minutos`
+        }
+    </script>
+</body>
+</html>
